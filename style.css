@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  display: flex; /* coloca os item um do lado do outro */
+  height: 100vh; /* vai ocupar a tela toda */
+  align-items: center; /* alinha meus itens ao centro */
+  justify-content: space-evenly; /* cria um espaço entre os itens*/
+}
+
+.logo-mario {
+  width: 400px; /* vai aumentar o item */
+  margin-left: 20%;
+}
+.mario-luigi {
+  width: 480px; /* vai aumentar o item */
+  margin-bottom: -18%;
+}
+
+.caixa-principal {
+  width: 40%; /* vai diminuir os meus itens em toda a caixa */
+  margin-bottom: -8%;
+  justify-content: space-evenly;
+}
+
+.caixa-video-mario {
+  position: fixed; /* deixa op video fixado na tela*/
+  top: 0; /* vai ficar em cima da tela */
+  z-index: -1; /* envio o video atraz dos itens */
+  width: 100%; /* ocupa a tela toda  largura*/
+  height: 100%; /* ocupa a tela toda  altura*/
+}
+
+video {
+  position: fixed; /* deixa op video fixado na tela*/
+  top: 0; /* vai ficar em cima da tela */
+  min-width: 100%; /* ocupa a tela toda  largura*/
+  min-height: 100%; /* ocupa a tela toda  altura*/
+}
+
+.link-watsapp {
+  height: 100px;
+  position: fixed; /* deixa op video fixado na tela*/
+  right: 30px;
+  bottom: 50px;
+}
+.link-watsapp:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.marcara-video {
+  width: 100%; /* ocupa a tela toda  largura*/
+  height: 100%; /* ocupa a tela toda  altura*/
+  position: fixed; /* deixa op video fixado na tela*/
+  top: 0; /* vai ficar em cima da tela */
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+}
+
+p {
+  color: white;
+  margin-top: 20px; /* separa o texto do logo*/
+  font-size: 20px; /* almenta o tamanho da letra*/
+}
+
+button {
+  height: 60px; /* altura*/
+  width: 200px; /* largura*/
+  background: #c51111;
+  border: none; /* tira a borda do button */
+  border-radius: 5px;
+  color: #fff; /* cor texto do button */
+  margin-top: 50px; /* separa o texto do logo*/
+  cursor: pointer;
+  font-size: 24px;
+}
+
+button:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  background-color: chartreuse;
+  color: #c51111;
+  color: black;
+  font-weight: bolder;
+}
+
+.fale-conosco {
+  background: rgb(175, 175, 175);
+  display: flex; /* coloca os item um do lado do outro */
+  flex-direction: column; /* deixa os tens em coluna */
+  padding: 20px; /*deixa borda interno dos itens */
+  border-radius: 10px;
+  gap: 20px; /*adiciona distencia em todos osa item */
+  position: fixed; /* deixa op video fixado na tela*/
+  left: -330px; /*coloca  o furmulario para o canto */
+  transition: left 1s ease-in-out; /* o formulario ira aparecer lentamento*/
+  z-index: 4; /* envio o video atraz dos formulario */
+}
+
+label {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+input {
+  height: 50px; /* separa a altura entre os itens*/
+  border-radius: 3px;
+  border: 1px solid gray; /* e uma bordinha fina nos inputs*/
+  padding-left: 10px; /* coloca borda dos texto */
+  outline-color: chartreuse; /*deixa borda externa  dos inputs */
+}
+
+.button-pedir {
+  display: flex; /* coloca os item um do lado do outro */
+  align-items: center; /* alinha meus itens ao centro */
+  justify-content: space-evenly; /* cria um espaço entre os itens*/
+  margin-left: 19%;
+  margin-bottom: 30px;
+}
+
+textarea {
+  height: 200px; /* separa a altura entre os itens*/
+  width: 300px; /* aumenta o item */
+  border-radius: 3px;
+  border: 1px solid gray; /* e uma bordinha fina nos inputs*/
+  padding: 10px; /* coloca borda dos texto 4 */
+  outline-color: chartreuse; /*deixa borda externa  dos inputs */
+}
+
+.marcara-form {
+  visibility: hidden; /*deixa vizivel quando cricar button aparece */
+  width: 100%; /* ocupa a tela toda  largura*/
+  height: 100%; /* ocupa a tela toda  altura*/
+  position: fixed; /* deixa op video fixado na tela*/
+  transition: left 1s ease-in-out; /* o formulario ira aparecer lentamento*/
+  top: 0;
+  z-index: 3; /* envio o video atraz dos itens */
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+}
+
+.logo-mini {
+  display: flex;
+  align-items: center; /* alinha meus itens ao centro */
+  gap: 70px;
+  justify-content: space-evenly; /* cria um espaço entre os itens*/
+  top: 50px;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.logo-mini img {
+  height: 150px;
+  cursor: pointer;
+  transition: 0.3s color ease-in-out;
+}
+
+.logo-mini a:hover {
+  color: greenyellow;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.3s color ease-in-out;
+}
+
+@media (max-width: 900px) {
+  p {
+    display: none;
+  }
+
+  .marcara-video {
+    width: 140%;
+  }
+
+  .logo-mini img {
+    height: 40px;
+  }
+
+  .logo-mini {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 95%;
+    left: 15px;
+  }
+
+  .logo-mario {
+    width: 250px;
+    margin-inline: -50px;
+  }
+
+  .mario-luigi {
+    width: 230px;
+    margin-bottom: -80%;
+    margin-left: -65%;
+  }
+
+  .caixa-principal {
+    display: flex;
+    margin-bottom: 65%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  button {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+  .link-watsapp {
+    height: 60px;
+    bottom: 30px;
+  }
+
+  textarea {
+    height: 100px;
+    width: 250px;
+  }
+}
+  
