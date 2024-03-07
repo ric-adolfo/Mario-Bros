@@ -10,4 +10,4 @@
 <br>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 
-<img src="https://raw.githubusercontent.com/ric-adolfo/Meu-2-projeto-responsivo/6a121837b56b7f40b80ff57890e826828ebdaf8e/assets/Projeto%202%20Responsivo.jpg"/>
+<img src="https://github.com/ric-adolfo/Projeto-Mario-Bros/blob/main/assets/Mario%20Bros.jpg?raw=true"/>
