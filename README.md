@@ -11,5 +11,6 @@
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 <br>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<a href"https://ric-adolfo.github.io/Projeto-Mario-Bros/"></a>
 
 <img src="https://github.com/ric-adolfo/Projeto-Mario-Bros/blob/main/assets/Mario%20Bros.jpg?raw=true"/>
